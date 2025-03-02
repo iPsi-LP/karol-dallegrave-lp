@@ -6,7 +6,7 @@
     <title>Karol Dallegrave - Consultora de Conteúdo e Media Training</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -15,17 +15,24 @@
         .header {
             background-color: #006400; /* Verde escuro */
             color: #FFD700; /* Dourado */
-            padding: 20px;
+            padding: 40px;
             text-align: center;
         }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
         .content {
-            padding: 20px;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
         }
         .footer {
             background-color: #006400;
             color: #FFD700;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
             position: fixed;
             width: 100%;
             bottom: 0;
@@ -36,6 +43,25 @@
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+        .service h3 {
+            margin-top: 0;
         }
     </style>
 </head>
@@ -48,11 +74,20 @@
         <h2>Sobre Karol</h2>
         <p>Karol Dallegrave é uma especialista em conteúdo e media training, ajudando indivíduos e organizações a aprimorar suas habilidades de comunicação e presença na mídia.</p>
         <h2>Serviços</h2>
-        <ul>
-            <li>Consultoria de Conteúdo</li>
-            <li>Media Training</li>
-            <li>Estratégias de Comunicação</li>
-        </ul>
+        <div class="services">
+            <div class="service">
+                <h3>Consultoria de Conteúdo</h3>
+                <p>Desenvolvimento de estratégias de conteúdo personalizadas para engajar seu público.</p>
+            </div>
+            <div class="service">
+                <h3>Media Training</h3>
+                <p>Treinamento para melhorar suas habilidades de comunicação em entrevistas e apresentações.</p>
+            </div>
+            <div class="service">
+                <h3>Estratégias de Comunicação</h3>
+                <p>Planejamento e execução de campanhas de comunicação eficazes.</p>
+            </div>
+        </div>
         <a href="#" class="button">Entre em Contato</a>
     </div>
     <div class="footer">
